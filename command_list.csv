@@ -1,0 +1,35 @@
+    1  git config --global user.name "OlgaTsykhonia"
+    2  git config --get user.name
+    3  git config user.email tsykhoniaolga@gmail.com
+    4  git config --global user.email tsykhoniaolga@gmail.com
+    5  git config --get user.email
+    6  git clone https://github.com/OlgaTsykhonia/HW_10.git
+    7  cd HW_10
+    8  touch.file text_ignore.txt 
+    9  touch file text.ignore.txt
+   10  ls -l
+   11  nano text_ignore.txt
+   12  git status
+   13  git add . 
+   14  git status
+   15  git commit -m "added text"
+   16  git status
+   17  git log
+   18  touch file main_test.txt
+   19  git add .
+   20  git commit -m "added file"
+   21  git checkout -b develop
+   22  touch file develop_test.txt
+   23  git add .
+   24  git commit -m "added new file"
+   25  vim develop_test.txt
+   26  git status
+   27  git add .
+   28  git commit -m "added changes"
+   29  git log
+   30  git checkout -b main
+   31  git checkout main
+   32  git merge develop 
+   33  git status
+   34  git log
+   35  history > command_list.csv
